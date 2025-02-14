@@ -27,7 +27,7 @@ const OurTeam = () => {
     <p className='text-gray-600 cursor-pointer'>Lorem ipsum dolor sit afacilis quibusdam placeat eum enim illum deserunt ullam architecto distinctio nemo quia, voluptatibus dignissimos consectetur praesentium ratione sed eugiat iusto voluptates minus impedit.</p>
 </div>
 <div>
-    <h1 className='text-2xl text-[#04ADE6] font-semibold'>Marketing</h1>
+    <h1 className='text-2xl text-[#04ADE6] font-semibold'>Marketing TroJob</h1>
     <p className='text-gray-600 cursor-pointer'>Lorem ipsum dolor sit afacilis quibusdam placeat eum enim illum deserunt ullam architecto distinctio nemo quia, voluptatibus dignissimos consectetur praesentium ratione sed eugiat iusto voluptates minus impedit.</p>
 </div>
 </div>

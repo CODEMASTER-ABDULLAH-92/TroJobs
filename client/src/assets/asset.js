@@ -35,7 +35,7 @@ import loginImg from "../assets/loginImg.jpg";
 import logo from "../assets/logo.png";
 import ly from "../assets/ly.png";
 import newLogo from "../assets/nn.png";
-import navbg from "../assets/navbg.png";
+import navbg from "../assets/navBg.png";
 import message from "../assets/message.png";
 import nz from "../assets/nz.png";
 import pencil from "../assets/pencil.png";
