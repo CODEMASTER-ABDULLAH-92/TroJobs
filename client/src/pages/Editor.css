@@ -1,0 +1,96 @@
+/* Import the Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Editor Container */
+ .editor-container {
+  font-family: 'Poppins', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} 
+
+/* ReactQuill Editor Custom Styles */
+.custom-quill .ql-container {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.custom-quill .ql-editor h2 {
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.custom-quill .ql-editor p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Toolbar Buttons Styling */
+.custom-quill .ql-toolbar {
+  border-radius: 10px 10px 0 0;
+}
+
+/* Save Button Styling */
+.save-button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+/* Editor.css */
+.custom-quill {
+  height: 300px; /* Adjust the height of the editor */
+}
+
+.link-input {
+  width: 300px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-link-button {
+  padding: 8px 15px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-link-button:hover {
+  background-color: #0056b3;
+}
+
+.save-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
