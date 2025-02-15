@@ -30,9 +30,11 @@ const createPost = async (req, res) => {
 
 const ListPost = async (req,res) => {
     try {
-        const post = a
+        const post = await Post.find({});
+        res.json({success:true,message:"Post adding", post})
     } catch (error) {
-        console.error('Listing Error: ',error);
+        console.error("Error in Listing");
+        res.json({success:false,message:"Error in Listing"})
     }
 }
-export { createPost};
+export { createPost,ListPost};

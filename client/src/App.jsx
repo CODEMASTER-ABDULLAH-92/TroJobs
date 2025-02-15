@@ -11,7 +11,10 @@ import AllDone from './pages/AllDone'
 import RegistrationDone from './pages/RegistrationDone'
 import JobListing from './pages/JobListing'
 import JobDetails from './pages/JobDetails'
-import CreateJob from './pages/CreateJob'
+import CreateJob from './Admin/CreateJob'
+import AdminHome from './Admin/AdminHome'
+import NotFound from './pages/Err'
+
 const App = () => {
   return (
     <div className=''>
@@ -28,6 +31,8 @@ const App = () => {
         <Route path='/jobListing/:jobId' element={<JobDetails/>}/>
         <Route path='/jobListing' element={<JobListing/>}/>
         <Route path='/CreateJob' element={<CreateJob/>}/>
+        <Route path='/admin' element={<AdminHome/>}/>
+        <Route path='*' element={<NotFound/>}/>
       </Routes>
     </div>
   )

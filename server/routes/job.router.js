@@ -1,6 +1,7 @@
 import express from 'express'
-import { createPost } from '../Controllers/job.contoller.js'
+import { createPost, ListPost } from '../Controllers/job.contoller.js'
 
 const router = express.Router();
-router.post('/posts',createPost);
+router.post('/addPost',createPost);
+router.get('/listing',ListPost);
 export default router;

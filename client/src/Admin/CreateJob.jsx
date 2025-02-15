@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 const CreateJob = () => {
   const [content, setContent] = useState("");
 const id = 1;
-  // Load content from local storage if available
   useEffect(() => {
     const savedContent = localStorage.getItem("editorContent");
     if (savedContent) {
@@ -23,7 +22,7 @@ const id = 1;
 
   const handleSave = async () => {
     try {
-      const response = await axios.post("http://localhost:5001/api/job/posts", { content });
+      const response = await axios.post("http://localhost:5001/api/job/addPost", { content });
       alert("Post saved!");
       setContent("");
       // Optionally clear local storage after saving
@@ -35,7 +34,9 @@ const id = 1;
 
   return (
     <div className="editor-container mx-auto p-4">
+      <form onSubmit={handleSave}>
       <ReactQuill
+        
         value={content}
         onChange={handleContentChange}
         modules={{
@@ -59,12 +60,13 @@ const id = 1;
           "redo",
         ]}
         className="custom-quill mb-4"
-      />
+        />
 
       {/* Save Button */}
-      <button className="save-button px-4 py-2 bg-green-500 text-white rounded-md" onClick={handleSave}>
+      <button className="save-button px-4 py-2 bg-green-500 text-white rounded-md" type="submit">
         Save Post
       </button>
+        </form>
 
       {/* Example Link */}
       <Link to={`/apply/${id}`} className="mt-4 block text-center bg-black text-white px-4 py-2 rounded-md">

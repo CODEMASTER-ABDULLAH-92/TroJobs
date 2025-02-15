@@ -1,6 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
-import dayjs from 'dayjs';
-
 import appleIcon from "../assets/appleIcon.png";
 import au from "../assets/au.png";
 import avater from "../assets/avater.png";
@@ -123,54 +120,65 @@ const formattedDate = sixHoursAgo.toLocaleDateString('en-GB', {
   year: 'numeric',
 });
 
-export const job = [
+export const jobe = [
   {
-  _id: uuidv4(),
-  JobName: 'Contact Center Agent',
-  location: 'Pakistan',
-  JobStatus: 'Remote',
-  jobType: 'Full Time',
-  saveImg: save,
-  salary: '2k',
-  date: formattedDate,
-  description:'Call center jobs involve handling customer inquiries, resolving complaints, and providing support via phone, email, or chat. Key skills include communication, problem-solving, and multitasking in a fast-paced environment.',
-  clockImg:clock,
-  locationImg:location,
-  Img:docter,
-  smallDescription:'Sales,services & Support',
-  
-},
-{
-  _id: uuidv4(),
-  JobName: 'HR Director',
-  location: 'Pakistan',
-  JobStatus: 'Remote',
-  jobType: 'Full Time',
-  saveImg: save,
-  salary: '2k',
-  date: formattedDate,
-  description:'Call center jobs involve handling customer inquiries, resolving complaints, and providing support via phone, email, or chat. Key skills include communication, problem-solving, and multitasking in a fast-paced environment.',
-  clockImg:clock,
-  locationImg:location,
-  Img:hr,
-  smallDescription:'People'
-},
-{
-  _id: uuidv4(),
-  JobName: 'Full-Stack Developer',
-  location: 'Pakistan',
-  JobStatus: 'Remote',
-  jobType: 'Full Time',
-  saveImg: save,
-  salary: '2k',
-  date: formattedDate,
-  description:'Call center jobs involve handling customer inquiries, resolving complaints, and providing support via phone, email, or chat. Key skills include communication, problem-solving, and multitasking in a fast-paced environment.',
-  clockImg:clock,
-  locationImg:location,
-  Img:js,
-  smallDescription:'Tech & Enggineering'
-},
-]
+    _id:"2844984877478", 
+    JobName: "Contact Center Agent",
+    location: "Pakistan",
+    JobStatus: "Remote",
+    jobType: "Full Time",
+    saveImg: save,
+    salary: "2k",
+    date: formattedDate,
+    description:
+      "Call center jobs involve handling customer inquiries, resolving complaints, and providing support via phone, email, or chat. Key skills include communication, problem-solving, and multitasking in a fast-paced environment.",
+    clockImg: clock,
+    locationImg: location,
+    Img: docter,
+    smallDescription: "Sales,services & Support",
+    experience: "Entry Level",
+    category: "tech",
+    content:"mara name abdullah"
+  },
+  {
+    _id:"848992867666", // Static ID
+    JobName: "HR Director",
+    location: "Pakistan",
+    JobStatus: "Remote",
+    jobType: "Full Time",
+    saveImg: save,
+    salary: "2k",
+    date: formattedDate,
+    description:
+      "Call center jobs involve handling customer inquiries, resolving complaints, and providing support via phone, email, or chat. Key skills include communication, problem-solving, and multitasking in a fast-paced environment.",
+    clockImg: clock,
+    locationImg: location,
+    Img: hr,
+    smallDescription: "People",
+    experience: "Entry Level",
+    content:"mara name abdullah ",
+    category: "web developer",
+  },
+  {
+    _id:"88399939882", // Static ID
+    JobName: "Full-Stack Developer",
+    location: "Pakistan",
+    JobStatus: "Remote",
+    jobType: "Full Time",
+    saveImg: save,
+    salary: "2k",
+    date: formattedDate,
+    description:
+      "Call center jobs involve handling customer inquiries, resolving complaints, and providing support via phone, email, or chat. Key skills include communication, problem-solving, and multitasking in a fast-paced environment.",
+    clockImg: clock,
+    locationImg: location,
+    Img: js,
+    smallDescription: "Tech & Enggineering",
+    experience: "Entry Level",
+    category: "Teaching",
+    content:"mara name abdullah "
+  },
+];
 
 
 

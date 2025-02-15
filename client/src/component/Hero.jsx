@@ -1,5 +1,5 @@
 import React from 'react';
-import { asset, job } from '../assets/asset'; // Assuming 'asset.homeImg' points to the image file
+import { asset} from '../assets/asset'; // Assuming 'asset.homeImg' points to the image file
 import Nav from './Nav';
 import HeroDropDown from './HeroDropDown';
 import { Link } from 'react-router-dom';
